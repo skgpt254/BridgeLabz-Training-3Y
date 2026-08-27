@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Plans</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .plans {
+            display: flex;
+        }
+
+        .plan {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid gray;
+            text-align: center;
+            min-height: 250px;
+            transition: 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            background-color: lightblue;
+        }
+
+        .popular {
+            border: 3px solid green;
+        }
+
+        a {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="plans">
+
+    <div class="plan">
+        <h2>Basic</h2>
+        <h3>₹299</h3>
+
+        <ul>
+            <li>5 Projects</li>
+            <li>Basic Support</li>
+            <li>10 GB Storage</li>
+        </ul>
+
+        <a href="#">Choose</a>
+    </div>
+
+    <div class="plan popular">
+        <h2>Standard</h2>
+        <h3>₹599</h3>
+
+        <ul>
+            <li>15 Projects</li>
+            <li>Priority Support</li>
+            <li>50 GB Storage</li>
+        </ul>
+
+        <a href="#">Choose</a>
+    </div>
+
+    <div class="plan">
+        <h2>Premium</h2>
+        <h3>₹999</h3>
+
+        <ul>
+            <li>Unlimited Projects</li>
+            <li>Premium Support</li>
+            <li>100 GB Storage</li>
+        </ul>
+
+        <a href="#">Choose</a>
+    </div>
+
+</div>
+
+</body>
+</html>

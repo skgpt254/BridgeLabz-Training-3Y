@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        .photo img {
+            width: 100%;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+        }
+
+        .photo:hover .caption {
+            opacity: 1;
+        }
+
+        @media (max-width: 700px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Photo Gallery</h1>
+
+<div class="gallery">
+
+    <div class="photo">
+        <img src="image1.jpg" alt="Nature">
+        <div class="caption">Nature</div>
+    </div>
+
+    <div class="photo">
+        <img src="image2.jpg" alt="Mountain">
+        <div class="caption">Mountain</div>
+    </div>
+
+    <div class="photo">
+        <img src="image3.jpg" alt="Beach">
+        <div class="caption">Beach</div>
+    </div>
+
+    <div class="photo">
+        <img src="image4.jpg" alt="Forest">
+        <div class="caption">Forest</div>
+    </div>
+
+    <div class="photo">
+        <img src="image5.jpg" alt="City">
+        <div class="caption">City</div>
+    </div>
+
+    <div class="photo">
+        <img src="image6.jpg" alt="Lake">
+        <div class="caption">Lake</div>
+    </div>
+
+</div>
+
+</body>
+</html>

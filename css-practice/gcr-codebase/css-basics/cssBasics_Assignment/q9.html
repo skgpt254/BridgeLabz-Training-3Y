@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial;
+        }
+
+        main {
+            background-color: white;
+            padding: 30px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .news {
+            column-count: 3;
+            column-gap: 30px;
+            text-align: justify;
+        }
+
+        h2 {
+            column-span: all;
+            text-align: center;
+        }
+
+        img {
+            width: 150px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 700px) {
+            .news {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <h1>THE DAILY NEWS</h1>
+
+    <div class="news">
+
+        <h2>Technology in Modern Life</h2>
+
+        <img src="news.jpg" alt="News">
+
+        <p>
+            Technology has become an important part of modern life.
+            People use computers and smartphones every day.
+        </p>
+
+        <p>
+            The internet has made communication much easier.
+            People can share information quickly.
+        </p>
+
+        <p>
+            Technology is also useful in education.
+            Students can use online resources for learning.
+        </p>
+
+        <p>
+            New technology will continue to change our lives.
+            People need to learn new skills.
+        </p>
+
+    </div>
+
+</main>
+
+</body>
+</html>

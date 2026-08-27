@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Members</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .team {
+            display: flex;
+        }
+
+        .card {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+        }
+
+        .leader {
+            background-color: lightblue;
+            border: 3px solid blue;
+        }
+
+        @media (max-width: 600px) {
+            .team {
+                display: block;
+            }
+
+            .card {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Our Team</h1>
+
+<div class="team">
+
+    <div class="card">
+        <h2>Rahul</h2>
+        <h3>Developer</h3>
+        <p>He works on the website.</p>
+    </div>
+
+    <div class="card leader">
+        <h2>Priya</h2>
+        <h3>Team Lead</h3>
+        <p>She manages the team.</p>
+    </div>
+
+    <div class="card">
+        <h2>Aman</h2>
+        <h3>Designer</h3>
+        <p>He designs the website.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
