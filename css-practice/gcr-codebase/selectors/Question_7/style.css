@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(247, 247, 247);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+main {
+    width: 75%;
+    margin: 40px auto;
+}
+
+article {
+    background-color: white;
+    padding: 40px;
+    border: 2px groove slategray;
+}
+
+article h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+article p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+article .second {
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+}
+
+mark {
+    background-color: khaki;
+    color: rgb(43, 48, 67);
+    padding: 3px;
+}
+
+strong {
+    color: tomato;
+}
+
+em {
+    color: darkkhaki;
+}
+
+article p::first-letter {
+    font-size: 42px;
+    font-weight: bold;
+    color: darkkhaki;
+}
+
+article p::first-line {
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

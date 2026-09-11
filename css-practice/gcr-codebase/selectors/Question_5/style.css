@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.selector-demo {
+    width: 70%;
+    background-color: white;
+    padding: 35px;
+    border: 2px groove slategray;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+/* Attribute selector: selects text input */
+input[type="text"] {
+    border: 3px solid darkkhaki;
+}
+
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pseudo-class: changes list item on hover */
+li:hover {
+    background-color: khaki;
+}
+
+/* Pseudo-class: changes input when focused */
+input:focus {
+    outline: 3px solid darkkhaki;
+}
+
+/* Pseudo-class: selects the second list item */
+li:nth-child(2) {
+    color: tomato;
+    font-weight: bold;
+}
+
+/* Pseudo-element: adds content before heading */
+h2::before {
+    content: ">> ";
+}
+
+/* Pseudo-element: adds content after heading */
+h2::after {
+    content: " <<";
+}
+
+/* Child combinator: selects direct child span */
+.parent > span {
+    color: darkkhaki;
+}
+
+/* Adjacent sibling combinator: selects p immediately after h2 */
+h2 + p {
+    font-style: italic;
+}
+
+/* General sibling combinator: selects later paragraphs */
+h2 ~ p {
+    line-height: 1.7;
+}
+
+/* Descendant combinator: selects inputs inside form */
+form input {
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

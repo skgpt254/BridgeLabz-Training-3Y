@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+
+header {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    padding: 40px;
+}
+
+.model-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.margin-layer {
+    width: 430px;
+    padding: 35px;
+    background-color: lightgray;
+    outline: 8px dashed darkkhaki;
+    text-align: center;
+}
+
+.border-layer {
+    padding: 30px;
+    background-color: slategray;
+    border: 8px solid rgb(43, 48, 67);
+}
+
+.padding-layer {
+    padding: 30px;
+    background-color: khaki;
+}
+
+.content-layer {
+    padding: 25px;
+    background-color: white;
+    border: 2px solid tomato;
+}
+
+.layer-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    width: 350px;
+    padding: 25px;
+    background-color: white;
+    border: 2px groove slategray;
+}
+
+.description h2 {
+    margin-bottom: 15px;
+}
+
+.description p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.comparison {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.default-box,
+.border-box {
+    width: 300px;
+    padding: 30px;
+    border: 10px solid slategray;
+    background-color: blanchedalmond;
+}
+
+.default-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+    background-color: darkkhaki;
+}
+
+footer {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 850px) {
+    .model-area,
+    .comparison {
+        flex-direction: column;
+    }
+
+    .margin-layer,
+    .description {
+        width: 80%;
+    }
+}

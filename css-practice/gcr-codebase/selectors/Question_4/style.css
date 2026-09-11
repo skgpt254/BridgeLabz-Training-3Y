@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px gray;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 270px;
+    min-height: 260px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.card1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.card2 {
+    box-shadow: 0 0 20px slategray;
+}
+
+.card3 {
+    box-shadow: 10px 10px 0 darkkhaki;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 20px 30px gray;
+}
+
+footer {
+    background-color: rgb(43, 48, 67);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 850px) {
+    .cards {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+}

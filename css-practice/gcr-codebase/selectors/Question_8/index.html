@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Box Model Exploration</h1>
+    </header>
+
+    <main>
+        <section class="model-area">
+            <div class="margin-layer">
+                <p class="layer-name">Margin</p>
+
+                <div class="border-layer">
+                    <p class="layer-name">Border</p>
+
+                    <div class="padding-layer">
+                        <p class="layer-name">Padding</p>
+
+                        <div class="content-layer">
+                            <h2>Content</h2>
+                            <p>The actual content is inside this layer.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <section class="description">
+                <h2>Box Model Parts</h2>
+                <p><b>Content:</b> The actual text or element content.</p>
+                <p><b>Padding:</b> Space between content and border.</p>
+                <p><b>Border:</b> The line around the padding.</p>
+                <p><b>Margin:</b> Outer space around the element.</p>
+            </section>
+        </section>
+
+        <section class="comparison">
+            <div class="default-box">
+                <h2>Default Box</h2>
+                <p>Content-box is used by default.</p>
+            </div>
+
+            <div class="border-box">
+                <h2>Border-box</h2>
+                <p>Width includes content, padding and border.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Box Model</p>
+    </footer>
+
+</body>
+</html>
