@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(247,247,247); }
+        .blog { min-height: 100vh; display: grid; grid-template-columns: 220px 1fr; grid-template-rows: auto 1fr auto; grid-template-areas: "header header" "sidebar main" "footer footer"; gap: 20px; padding: 20px; }
+        header { grid-area: header; background-color: rgb(43,48,67); color: white; padding: 25px; display: flex; justify-content: space-between; align-items: center; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        aside { grid-area: sidebar; padding: 20px; background-color: khaki; display: flex; flex-direction: column; gap: 20px; }
+        aside a { color: black; text-decoration: none; }
+        main { grid-area: main; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        article { padding: 30px; min-height: 220px; background-color: white; border: 2px groove slategray; }
+        article h2 { margin-bottom: 20px; }
+        footer { grid-area: footer; text-align: center; padding: 20px; background-color: rgb(43,48,67); color: white; }
+    </style>
+</head>
+<body>
+    <div class="blog">
+        <header><h1>My Blog</h1><nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav></header>
+        <aside><h3>Categories</h3><a href="#">Technology</a><a href="#">Cybersecurity</a><a href="#">Programming</a><a href="#">College</a></aside>
+        <main>
+            <article><h2>Learning CSS Grid</h2><p>CSS Grid helps us create layouts using rows and columns.</p></article>
+            <article><h2>Learning Flexbox</h2><p>Flexbox is useful for arranging items in one direction.</p></article>
+        </main>
+        <footer><p>Email: example@gmail.com | Contact: 9876543210</p></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Verdana, Geneva, Tahoma, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background-color: rgb(43, 48, 67); color: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        main { flex: 1; display: flex; justify-content: center; align-items: center; gap: 50px; padding: 50px; }
+        #about { width: 50%; text-align: center; }
+        #about h1 { margin-bottom: 20px; }
+        .image-section { width: 250px; text-align: center; }
+        .image-section img { width: 200px; height: 220px; object-fit: cover; border: 3px groove slategray; }
+        footer { text-align: center; background-color: rgb(43, 48, 67); color: white; padding: 15px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Sandesh Kumar Gupta</h2>
+        <nav><a href="#">Home</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I am a Computer Science student interested in web development, cybersecurity and learning new technologies.</p>
+        </section>
+        <section class="image-section"><img src="av2.jpg" alt="Profile Image"></section>
+    </main>
+    <footer id="contact"><p>&copy; 2026 Sandesh Kumar Gupta</p></footer>
+</body>
+</html>

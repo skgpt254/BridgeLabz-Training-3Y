@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Homepage</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { min-height: 100vh; font-family: Verdana, Geneva, Tahoma, sans-serif; display: flex; flex-direction: column; }
+        header { background-color: rgb(43,48,67); color: white; padding: 20px; display: flex; justify-content: space-around; align-items: center; }
+        nav { display: flex; justify-content: space-around; gap: 25px; }
+        nav a { color: white; text-decoration: none; }
+        main { flex: 1; display: flex; justify-content: center; align-items: center; gap: 30px; padding: 30px; }
+        .box { width: 250px; height: 180px; border: 3px groove slategray; background-color: blanchedalmond; display: flex; justify-content: center; align-items: center; transition: 0.3s; }
+        .box:nth-child(2) { background-color: khaki; }
+        .box:nth-child(3) { background-color: darkkhaki; }
+        .box:hover { transform: rotate(2deg); }
+        footer { width: 100%; text-align: center; padding: 15px; background-color: rgb(43,48,67); color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Website</h2>
+        <nav><a href="#">Home</a><a href="#">Services</a><a href="#">Projects</a><a href="#">Contact</a></nav>
+    </header>
+    <main>
+        <div class="box">Services</div>
+        <div class="box">Projects</div>
+        <div class="box">Contact</div>
+    </main>
+    <footer><p>&copy; 2026 My Website</p></footer>
+</body>
+</html>

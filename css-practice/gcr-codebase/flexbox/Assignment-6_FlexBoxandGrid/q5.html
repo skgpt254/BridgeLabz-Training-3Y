@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Section</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { min-height: 100vh; font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(247,247,247); padding: 40px 20px; }
+        h1 { text-align: center; margin-bottom: 40px; }
+        main { display: flex; justify-content: center; align-items: center; gap: 25px; }
+        .card { width: 260px; min-height: 280px; padding: 30px 20px; border: 2px groove slategray; background-color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 18px; animation: fadeIn 1s ease; transition: 0.3s; }
+        .middle { min-height: 320px; background-color: khaki; }
+        .card:hover { transform: translateY(-10px); }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Plan</h1>
+    <main>
+        <div class="card"><h2>Basic</h2><p>₹199 / month</p><p>5 Projects</p><p>Basic Support</p></div>
+        <div class="card middle"><h2>Pro</h2><p>₹499 / month</p><p>20 Projects</p><p>Priority Support</p></div>
+        <div class="card"><h2>Premium</h2><p>₹899 / month</p><p>Unlimited Projects</p><p>Premium Support</p></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(247,247,247); padding: 25px; }
+        h1 { text-align: center; margin-bottom: 30px; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        figure { margin: 0; overflow: hidden; border: 2px groove slategray; background-color: white; }
+        figure img { width: 100%; height: 220px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+        figure img:hover { transform: scale(1.05); }
+        figcaption { text-align: center; padding: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    <main class="gallery">
+        <figure><img src="images/img1.avif" alt="Gallery Image 1"><figcaption>Photo One</figcaption></figure>
+        <figure><img src="images/img2.avif" alt="Gallery Image 2"><figcaption>Photo Two</figcaption></figure>
+        <figure><img src="images/img3.svg" alt="Gallery Image 3"><figcaption>Photo Three</figcaption></figure>
+        <figure><img src="images/img4.jpg" alt="Gallery Image 4"><figcaption>Photo Four</figcaption></figure>
+        <figure><img src="images/img1.avif" alt="Gallery Image 5"><figcaption>Photo Five</figcaption></figure>
+        <figure><img src="images/img2.avif" alt="Gallery Image 6"><figcaption>Photo Six</figcaption></figure>
+    </main>
+</body>
+</html>

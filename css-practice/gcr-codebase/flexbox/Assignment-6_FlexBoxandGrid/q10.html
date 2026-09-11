@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox and Grid</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(247,247,247); }
+        .page { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+        header { padding: 20px 35px; background-color: rgb(43,48,67); color: white; display: flex; justify-content: space-between; align-items: center; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; }
+        main { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; padding: 30px; }
+        article { background-color: white; border: 2px groove slategray; padding: 30px; }
+        article h2 { animation: titleMove 1s ease; margin-bottom: 30px; }
+        .boxes { display: flex; justify-content: space-around; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .box { width: 30%; min-height: 120px; background-color: khaki; border: 2px groove slategray; display: flex; justify-content: center; align-items: center; }
+        aside { padding: 25px; background-color: blanchedalmond; border: 2px groove slategray; }
+        aside h3 { margin-bottom: 20px; }
+        aside p { margin-bottom: 15px; }
+        footer { text-align: center; padding: 15px; background-color: rgb(43,48,67); color: white; }
+        @keyframes titleMove {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header><h1>My Website</h1><nav><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></nav></header>
+        <main>
+            <article>
+                <h2>Welcome to My Website</h2>
+                <div class="boxes"><div class="box">HTML</div><div class="box">CSS</div><div class="box">Flexbox</div></div>
+                <p>This page combines Flexbox and Grid to create a simple responsive layout.</p>
+            </article>
+            <aside><h3>Sidebar</h3><p>Latest Updates</p><p>Useful Links</p><p>About</p></aside>
+        </main>
+        <footer><p>&copy; 2026 My Website</p></footer>
+    </div>
+</body>
+</html>

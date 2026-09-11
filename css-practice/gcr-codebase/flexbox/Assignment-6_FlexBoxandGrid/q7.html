@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Animation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { min-height: 100vh; display: flex; justify-content: center; align-items: center; background-color: rgb(247,247,247); }
+        .loader { display: flex; justify-content: center; align-items: center; gap: 12px; }
+        .circle { width: 18px; height: 18px; border-radius: 50%; background-color: darkkhaki; animation: move 0.8s infinite; }
+        .circle2 { animation-delay: 0.15s; }
+        .circle3 { animation-delay: 0.3s; }
+        @keyframes move {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+    </div>
+</body>
+</html>
