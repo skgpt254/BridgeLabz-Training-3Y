@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937
+}
+
+header,
+footer {
+    background: #172033;
+    color: white;
+    padding: 20px;
+    text-align: center
+}
+
+main {
+    width: min(1200px, 92%);
+    margin: auto;
+    padding: 40px 0
+}
+
+.head nav {
+    display: flex;
+    gap: 22px
+}
+
+.head a {
+    color: white;
+    text-decoration: none
+}
+
+.demo {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 24px
+}
+
+.demo article {
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px #0002;
+    animation: fade .8s both;
+    transition: transform .3s
+}
+
+.demo article:hover {
+    transform: translateY(-4px)
+}
+
+.mini {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px
+}
+
+.mini img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform .3s
+}
+
+.mini img:hover {
+    transform: scale(1.05)
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@media(max-width:700px) {
+    .head {
+        flex-direction: column
+    }
+
+    .demo {
+        grid-template-columns: 1fr
+    }
+}
