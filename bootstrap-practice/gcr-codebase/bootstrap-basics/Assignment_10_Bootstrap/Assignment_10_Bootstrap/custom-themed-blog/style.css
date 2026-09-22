@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa
+}
+
+footer {
+    margin-top: auto
+}
+
+.card {
+    transition: .3s
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+
+:root {
+    --bs-primary: #7c3aed;
+    --bs-primary-rgb: 124, 58, 237;
+    --bs-font-sans-serif: Poppins, Arial, sans-serif
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background: #faf7ff
+}
+
+header,
+footer {
+    background: #2e1065;
+    color: white
+}
+
+.btn-primary {
+    --bs-btn-bg: #7c3aed;
+    --bs-btn-border-color: #7c3aed;
+    --bs-btn-hover-bg: #6d28d9
+}
+
+.card-img-top {
+    height: 230px;
+    object-fit: cover
+}

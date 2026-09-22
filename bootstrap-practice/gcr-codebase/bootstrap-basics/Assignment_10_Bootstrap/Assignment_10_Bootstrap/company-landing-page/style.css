@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa
+}
+
+footer {
+    margin-top: auto
+}
+
+.card {
+    transition: .3s
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0d6efd, #4f46e5) !important
+}

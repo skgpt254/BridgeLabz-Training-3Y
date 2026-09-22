@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa
+}
+
+footer {
+    margin-top: auto
+}
+
+.card {
+    transition: .3s
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+
+.product {
+    height: 190px;
+    object-fit: cover
+}
+
+.card:hover {
+    box-shadow: 0 .75rem 1.5rem #0002 !important
+}
