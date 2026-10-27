@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Character Counter</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: 32px auto;
+            padding: 0 16px
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 150px;
+            padding: 10px
+        }
+
+        .counter {
+            margin: 8px 0
+        }
+
+        .warning {
+            color: #b8860b
+        }
+
+        .limit {
+            color: red;
+            font-weight: bold
+        }
+
+        button {
+            padding: 8px 14px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Live Character Counter</h1><textarea id="message" maxlength="100"
+        placeholder="Type up to 100 characters..."></textarea>
+    <p id="counter" class="counter"></p><button id="resetButton">Reset</button>
+    <script src="Q2_character_counter.js"></script>
+</body>
+
+</html>

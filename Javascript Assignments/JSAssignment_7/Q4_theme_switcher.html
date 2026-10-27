@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Theme Switcher</title>
+    <style>
+        body {
+            font-family: Arial;
+            min-height: 100vh;
+            margin: 0;
+            padding: 32px;
+            box-sizing: border-box;
+            transition: background .2s, color .2s
+        }
+
+        .theme-light {
+            background: #fff;
+            color: #222
+        }
+
+        .theme-dark {
+            background: #222;
+            color: #fff
+        }
+
+        .theme-blue {
+            background: #dceeff;
+            color: #10365c
+        }
+
+        button {
+            padding: 10px 14px;
+            margin-right: 8px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Theme Switcher</h1>
+    <p>Choose a theme using the buttons below.</p><button data-theme-choice="light">Light</button><button
+        data-theme-choice="dark">Dark</button><button data-theme-choice="blue">Blue</button>
+    <p id="themeStatus">Theme is set using body attributes.</p>
+    <script src="Q4_theme_switcher.js"></script>
+</body>
+
+</html>

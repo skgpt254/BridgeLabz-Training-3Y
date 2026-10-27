@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Student Table Filter</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 700px;
+            margin: 32px auto;
+            padding: 0 16px
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 14px
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left
+        }
+
+        th {
+            background: #eee
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Table Filter</h1><input id="studentSearch" placeholder="Search name, branch, or CGPA">
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aarav Sharma</td>
+                <td>CSE</td>
+                <td>8.7</td>
+            </tr>
+            <tr>
+                <td>Meera Singh</td>
+                <td>ECE</td>
+                <td>9.1</td>
+            </tr>
+            <tr>
+                <td>Rahul Verma</td>
+                <td>IT</td>
+                <td>7.9</td>
+            </tr>
+            <tr>
+                <td>Priya Gupta</td>
+                <td>CSE</td>
+                <td>9.4</td>
+            </tr>
+            <tr>
+                <td>Aditya Kumar</td>
+                <td>Mechanical</td>
+                <td>8.2</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="noResults" hidden>No results found</p>
+    <script src="Q6_table_filter.js"></script>
+</body>
+
+</html>
