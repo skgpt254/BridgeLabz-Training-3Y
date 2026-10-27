@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fake Store Product Dashboard</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;background:#f5f6f8}
+h1,#message{text-align:center}
+#products{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.product-card{background:white;border-radius:8px;padding:16px;box-shadow:0 2px 8px #0001}
+.product-card img{display:block;width:100%;height:140px;object-fit:contain}
+.product-card h2{font-size:1rem}.price{font-weight:bold}
+</style></head>
+<body>
+<h1>Fake Store — Product Dashboard</h1><p id="message">Loading products...</p><div id="products"></div>
+<script>
+"use strict";
+async function loadProducts() {
+    const message = document.getElementById("message");
+    const productContainer = document.getElementById("products");
+    try {
+        const response = await fetch("https://fakestoreapi.com/products");
+        if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+        const products = await response.json();
+        message.textContent = `${products.length} products loaded.`;
+        products.forEach(product => {
+            const card = document.createElement("article");
+            card.className = "product-card";
+            const image = document.createElement("img");
+            image.src = product.image; image.alt = product.title;
+            const title = document.createElement("h2");
+            title.textContent = product.title;
+            const price = document.createElement("p");
+            price.className = "price"; price.textContent = `$${product.price}`;
+            card.append(image, title, price);
+            productContainer.append(card);
+        });
+    } catch (error) {
+        message.textContent = "Failed to load products. Please try again.";
+        console.error(error);
+    }
+}
+loadProducts();
+</script></body></html>
