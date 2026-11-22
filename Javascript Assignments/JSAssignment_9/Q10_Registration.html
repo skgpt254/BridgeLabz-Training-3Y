@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q10_Registration.js" defer></script>
+  <style>.invalid { border: 2px solid red; }</style>
+</head>
+<body>
+  <header><h1>Registration Form</h1></header>
+  <main>
+    <form id="registrationForm">
+      <label>Name: <input id="name" type="text"></label><br>
+      <label>Email: <input id="email" type="text"></label><br>
+      <label>Password: <input id="password" type="password"></label><br>
+      <button type="submit">Register</button>
+    </form>
+    <p id="result" aria-live="polite"></p>
+  </main>
+</body>
+</html>

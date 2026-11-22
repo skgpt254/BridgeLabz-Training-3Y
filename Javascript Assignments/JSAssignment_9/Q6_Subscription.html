@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Subscription</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q6_Subscription.js" defer></script>
+</head>
+<body>
+  <header><h1>Choose Your Topics</h1></header>
+  <main>
+    <section id="topics">
+      <button class="topic">Technology</button>
+      <button class="topic">Sports</button>
+      <button class="topic">Education</button>
+      <button class="topic">Health</button>
+      <button class="topic">News</button>
+    </section>
+    <input id="newTopic" placeholder="New topic">
+    <button id="addTopic">Add Topic</button>
+    <input id="removeTopic" placeholder="Topic to remove">
+    <button id="removeButton">Remove Topic</button>
+    <p id="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

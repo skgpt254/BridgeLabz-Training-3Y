@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q5_Team.js" defer></script>
+  <style>.member { padding: 8px; margin: 5px; background: #eee; }</style>
+</head>
+<body>
+  <header><h1>Team Members</h1></header>
+  <main id="team">
+    <section class="department">
+      <h2 class="departmentName">Development Department</h2>
+      <div class="member manager">Riya - Manager</div>
+      <div class="member report">Aman - Developer <span class="contact">aman@example.com</span></div>
+      <div class="member report">Neha - Developer <span class="contact">neha@example.com</span></div>
+    </section>
+    <section class="department">
+      <h2 class="departmentName">Design Department</h2>
+      <div class="member manager">Karan - Manager</div>
+      <div class="member report">Simran - Designer <span class="contact">simran@example.com</span></div>
+      <div class="member report">Arjun - Designer <span class="contact">arjun@example.com</span></div>
+    </section>
+    <button id="randomEmployee">Select Random Employee</button>
+    <button id="collapseTeam">Collapse / Expand Team</button>
+  </main>
+</body>
+</html>

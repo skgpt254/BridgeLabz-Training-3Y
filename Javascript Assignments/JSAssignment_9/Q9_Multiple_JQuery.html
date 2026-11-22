@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple jQuery Versions</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    // Keep version 1 in jq1 and free the $ name.
+    var jq1 = jQuery.noConflict(true);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // Keep version 2 in jq2 and free the $ name.
+    var jq2 = jQuery.noConflict(true);
+  </script>
+  <script src="Q9_Multiple_JQuery.js" defer></script>
+</head>
+<body>
+  <header><h1>Dashboard</h1></header>
+  <main>
+    <div id="carousel">Carousel slide 1</div>
+    <button id="nextSlide">Next Slide</button>
+    <div class="widget" title="First widget tooltip">Widget 1</div>
+    <div class="widget" title="Second widget tooltip">Widget 2</div>
+    <div class="widget" title="Third widget tooltip">Widget 3</div>
+    <button id="showNotice">Show Notification</button>
+    <div id="notice" style="display:none;">Notification <button id="closeNotice">Close</button></div>
+  </main>
+</body>
+</html>

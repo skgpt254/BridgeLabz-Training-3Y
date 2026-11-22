@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Q2_Product.js" defer></script>
+  <style>
+    .product { padding: 12px; margin: 8px; background: #eee; }
+    .discount { border: 2px solid orange; }
+    .chosen { background: #fff2a8; }
+    .selected { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header><h1>Our Products</h1></header>
+  <main>
+    <article class="product" data-stock="yes" data-discount="yes">
+      <h2>Headphones</h2><p>Rs. 999</p>
+      <p class="details" hidden>Wireless headphones.</p>
+      <button class="favorite">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="no" data-discount="no">
+      <h2>Smart Watch</h2><p>Rs. 1499</p>
+      <p class="details" hidden>Fitness tracking watch.</p>
+      <button class="favorite">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="yes" data-discount="yes">
+      <h2>Keyboard</h2><p>Rs. 799</p>
+      <p class="details" hidden>Computer keyboard.</p>
+      <button class="favorite">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="yes" data-discount="no">
+      <h2>Mouse</h2><p>Rs. 399</p>
+      <p class="details" hidden>Optical USB mouse.</p>
+      <button class="favorite">♡ Favorite</button>
+    </article>
+    <article class="product" data-stock="no" data-discount="yes">
+      <h2>Speaker</h2><p>Rs. 1199</p>
+      <p class="details" hidden>Bluetooth speaker.</p>
+      <button class="favorite">♡ Favorite</button>
+    </article>
+  </main>
+</body>
+</html>
